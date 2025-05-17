@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Location</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .location-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            .header {
+                font-size: 24px;
+                padding: 10px;
+            }
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+            .btn {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            Customer Location Information (Nearest City to Hotel)
+        </div>
+
+        <!-- Table to display customer location information -->
+        <div class="table-container">
+            <table class="location-table">
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Room Number</th>
+                        <th>Location</th>
+                        <th>Nearest City</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>101</td>
+                        <td>Ocean View, 1st Floor</td>
+                        <td>Rajkot</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>102</td>
+                        <td>Mountain View, 2nd Floor</td>
+                        <td>vadodra</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Johnson</td>
+                        <td>203</td>
+                        <td>Garden View, 1st Floor</td>
+                        <td>Surat</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>305</td>
+                        <td>Poolside, 3rd Floor</td>
+                        <td>Ahembdabad</td>
+                        <td>Gujarat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Button for adding or managing customer locations -->
+        <a href="add-customer-location.html" class="btn">Add New Location</a>
+    </div>
+
+</body>
+</html>
